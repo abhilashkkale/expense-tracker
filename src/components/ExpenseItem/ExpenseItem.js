@@ -1,9 +1,10 @@
+import React from 'react';
 import './ExpenseItem.css';
 import ExpenseDate from '../ExpenseDate/ExpenseDate';
 import Card from '../common/Card/Card';
 
 // Here instead of props,  we can also name it as any variable name like say data.
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   return (
     <Card className='expense-item'>
       <ExpenseDate date={props.date} />
